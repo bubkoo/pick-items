@@ -1,0 +1,54 @@
+{
+  "name": "pick-items",
+  "version": "1.0.0",
+  "description": "Randomly sampling some items from an array.",
+  "main": "index.js",
+  "scripts": {
+    "lint": "jshint index.js",
+    "pretest": "npm run lint",
+    "test": "mocha -R spec",
+    "test:cov": "rm -rf ./test/coverage && istanbul cover _mocha --dir ./test/coverage -- -R spec",
+    "test:rpt": "npm run test:cov && coveralls < ./test/coverage/lcov.info",
+    "prepublish": "npm test"
+  },
+  "keywords": [
+    "pick",
+    "sampling",
+    "array",
+    "arr",
+    "item",
+    "items",
+    "array-like",
+    "shuffle",
+    "random",
+    "randomly",
+    "randomize",
+    "rand"
+  ],
+  "license": "MIT",
+  "author": {
+    "name": "bubkoo",
+    "email": "bubkoo.wy@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bubkoo/pick-items.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bubkoo/pick-items/issues"
+  },
+  "homepage": "https://github.com/bubkoo/pick-items#readme",
+  "devDependencies": {
+    "jshint": "^2.9.1",
+    "chai": "^3.5.0",
+    "coveralls": "^2.11.9",
+    "istanbul": "^0.4.2",
+    "mocha": "^2.4.5"
+  },
+  "dependencies": {
+    "is-array-like": "^1.1.0",
+    "is-index": "^1.0.1",
+    "random-index": "^1.0.0",
+    "to-length": "^1.0.0"
+  }
+}
