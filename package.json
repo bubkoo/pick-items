@@ -1,6 +1,6 @@
 {
   "name": "pick-items",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Randomly sampling some items from an array.",
   "main": "index.js",
   "scripts": {

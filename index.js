@@ -9,7 +9,7 @@ var randomIndex = require('random-index');
 module.exports = function (arr, options) {
 
   if (!arr || !isArrayLike(arr)) {
-    return arr;
+    arr = [arr];
   }
 
   var length = arr.length;
