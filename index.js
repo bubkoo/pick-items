@@ -1,10 +1,11 @@
 'use strict';
 
 
-var isArrayLike = require('is-array-like');
 var isIndex     = require('is-index');
 var toLength    = require('to-length');
+var isArrayLike = require('is-array-like');
 var randomIndex = require('random-index');
+
 
 module.exports = function (arr, options) {
 
