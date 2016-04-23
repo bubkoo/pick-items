@@ -56,7 +56,8 @@ pickItems([1, 2, 3, 4, 5], { count: 3, shuffled: true });
 - [pick-props](https://github.com/mock-end/pick-props) - Given an object, pick some random properties and return them in an array.
 - [pick-key](https://github.com/mock-end/pick-key) - Given an object, pick a random key and return it.
 - [pick-keys](https://github.com/mock-end/pick-keys) - Given an object, pick some random keys and return them in an array.
-
+- [pick-pair](https://github.com/mock-end/pick-pair) - Given an object, pick a random key-value and return it in a new object.
+- [pick-pairs](https://github.com/mock-end/pick-pairs) - Given an object, pick some random key-values and return it in a new object.
 
 ## Contributing
 
