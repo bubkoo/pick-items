@@ -3,7 +3,7 @@
 var expect = require('chai').expect;
 
 
-describe('pick-some: ', function () {
+describe('pick-items: ', function () {
 
   var pickItems = require('../../');
 
