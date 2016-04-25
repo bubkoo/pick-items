@@ -23,9 +23,7 @@ $ npm install --save pick-items
 var pickItems = require('pick-items');
 
 // API
-// - pickItems(array)
-// - pickItems(array, count)
-// - pickItems(array, options)
+// - pickItems(array[, count/options])
 ```
 
 By default omit the quantity to retrieve a set with a random length:
