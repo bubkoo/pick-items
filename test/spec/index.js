@@ -36,11 +36,6 @@ describe('pick-items: ', function () {
     expect([1]).to.include.members(pickItems(1));
 
     expect('abcd'.split('')).to.include.members(pickItems('abcd'));
-
-
-    //expect(pickItems()).to.be.undefined;
-    //expect(pickItems(null)).to.be.null;
-    //expect(pickItems(1)).to.be.equal(1);
   });
 
 });

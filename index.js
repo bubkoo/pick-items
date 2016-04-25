@@ -29,11 +29,11 @@ module.exports = function (arr, options) {
     shuffled = false;
   }
 
-  count = isIndex(count) ? toLength(count) : randomIndex(length);
+  count = isIndex(count) ? toLength(count) : randomIndex({ max: length });
 
   // pick one
   if (count === 1) {
-    return [arr[randomIndex(length - 1)]];
+    return [arr[randomIndex({ max: length - 1 })]];
   }
 
   // pick some
@@ -45,7 +45,7 @@ module.exports = function (arr, options) {
   var candidates = [];
 
   while (count && length) {
-    var index = randomIndex(length - 1);
+    var index = randomIndex({ max: length - 1 });
     candidates.push(indexArr[index]);
     indexArr.splice(index, 1);
     length -= 1;
